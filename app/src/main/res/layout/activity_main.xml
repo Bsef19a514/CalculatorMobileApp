@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignWithParentIfMissing="false"
+    android:layout_alignParentTop="false"
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <Button
+        android:id="@+id/percent_btn"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="372dp"
+        android:backgroundTint="@color/black"
+        android:text="%"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/prev_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/clear_btn"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="372dp"
+        android:backgroundTint="@color/black"
+        android:text="C"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/power_btn"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="^"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_dot"
+        app:layout_constraintTop_toBottomOf="@+id/percent_btn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/div_btn"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="372dp"
+        android:backgroundTint="@color/black"
+        android:text="/"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/percent_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_dot"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="@color/black"
+        android:text="."
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toEndOf="@+id/btn_0"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_0"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="@color/black"
+        android:text="0"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/mul_btn"
+        android:onClick="onClick"
+
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="x"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/power_btn"
+        app:layout_constraintTop_toBottomOf="@+id/div_btn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="3"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toEndOf="@+id/btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_6"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_5"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="5"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toEndOf="@+id/btn_4"
+        app:layout_constraintTop_toBottomOf="@+id/btn_8"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_8"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="8"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toEndOf="@+id/btn_7"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dot"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_7"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="7"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="2"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toEndOf="@+id/btn_1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_4"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="4"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_7"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="1"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_6"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="6"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toEndOf="@+id/btn_5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_9"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="+"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        app:layout_constraintStart_toEndOf="@+id/btn_6"
+        app:layout_constraintTop_toBottomOf="@+id/sub_btn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prev_btn"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="372dp"
+        android:backgroundTint="@color/black"
+        android:text="Del"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/clear_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/equal_btn"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#FF5722"
+        android:text="="
+        android:textSize="24sp"
+        android:textColor="#212121"
+        app:layout_constraintStart_toEndOf="@+id/btn_3"
+        app:layout_constraintTop_toBottomOf="@+id/add_btn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/sub_btn"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="-"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_9"
+        app:layout_constraintTop_toBottomOf="@+id/mul_btn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_9"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:text="9"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_8"
+        app:layout_constraintTop_toBottomOf="@+id/power_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="390dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="272dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
